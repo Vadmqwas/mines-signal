@@ -1,0 +1,61 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.background {
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(3px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 6px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.cell img {
+  width: 80px;
+  height: 60px;
+}
+
+button, select {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff6f00;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
