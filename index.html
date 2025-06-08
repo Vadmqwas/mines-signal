@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mines Signal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1>MINES SIGNAL</h1>
+    
+    <label for="starCount">Количество сигнала:</label>
+    <select id="starCount">
+      <option value="3">3</option>
+      <option value="5" selected>5</option>
+      <option value="7">7</option>
+    </select>
+    
+    <div id="grid" class="grid"></div>
+    
+    <button id="signalBtn">GET SIGNAL</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
